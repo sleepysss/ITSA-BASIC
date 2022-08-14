@@ -32,7 +32,11 @@ int main()
     //for(int i=0;i<row*column;++i)
     //    printf("%d ",ptr[i]);
     //printf("\n");
-    
+    //21~30也可直接
+    // for(int i=0;i<(a*b);i++){
+    //	scanf("%d",&box[i]);
+	//}
+    //因為反正最後都是會輸入row*column個數據,只是差在使用者分幾次輸入,一次幾個
     num=0;
     for(int i=0;i<row;++i)
     {
