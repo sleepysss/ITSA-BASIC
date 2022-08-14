@@ -21,7 +21,7 @@ int main()
     for(int i=0;i<column;++i)
     {
         num=i;  //base (第i行起始的index)
-        //讓多個變數賦值,而不用用一堆%d,且%d無法寫死,見C quick review的2-(1)和32,且%d會忽略white space
+        //scanf會檢查buffer,buffer有數據,則會從buffer拿數據,不讓用戶輸入!下面的for展開就是3個scanf,打100空白200enter和100enter200enter是一樣的(都給兩個變數賦值)
         for(int j=0;j<row;++j)  //每一行會有row個數字,他們的index為差column  (base+offset的概念)
         {
             scanf("%d",&ptr[num]);
