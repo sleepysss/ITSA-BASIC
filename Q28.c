@@ -10,6 +10,7 @@ int main()
     cpy_f2=f2;
     cpy_f1=f1;
     
+    //從大的獎項一路對下去,中了就跳開換對下一張
     while(amount--)
     {
         f1=cpy_f1;  //set to default value
@@ -87,6 +88,8 @@ int main()
     
     printf("%d %d %d %d %d %d %d\n",prize[0],prize[1],prize[2],prize[3],prize[4],prize[5],prize[6]);
     printf("%d\n",money);
-
+    
+    //其他解法:獎項用%s存,每個獎項分別看中幾碼(由低位到高位),最後再取biggest的錢當作那張發票的中獎金額
+   
     return 0;
 }
