@@ -7,13 +7,13 @@ int main()
     int i,A,B;
     
     scanf("%s",ans);
-    while((i=getchar())!=EOF&&i!='\n');
+    while((i=getchar())!=EOF&&i!='\n'); //可不加,因為%s會忽略white space
     for(;;)
     {
         scanf("%s",num);
         if((num[0]+num[1]+num[2]+num[3])==192)  //0+0+0+0=192
             break;
-        while((i=getchar())!=EOF&&i!='\n');
+        while((i=getchar())!=EOF&&i!='\n');  //可不加,因為%s會忽略white space
         A=0;
         B=0;
         for(i=0;i<4;++i)  //traverse every bit of ans
