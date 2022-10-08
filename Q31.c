@@ -71,7 +71,7 @@ int main()
                 }
             }
             if(!flag)
-                printf("NO");
+                printf("NO\n");
             count=0;
             flag=0;
         }
